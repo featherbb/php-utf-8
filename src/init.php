@@ -43,3 +43,7 @@ if (PHP_UTF_8_MODE == 'mbstring') {
 } elseif (PHP_UTF_8_MODE == 'native') {
     require_once PHP_UTF_8_DIR . '/core/native.php';
 }
+
+// Load the native implementation of utf8_trim
+require_once PHP_UTF_8_DIR . '/functions/trim.php';
+
